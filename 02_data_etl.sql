@@ -1,6 +1,16 @@
-INSERT INTO countries (country,development_level,poverty_rate_percent,internet_infrastructure_index,average_internet_speed_mbps)
-SELECT country,development_level,poverty_rate_percent,internet_infrastructure_index,average_internet_speed_mbps
+INSERT INTO countries (country,
+ development_level,
+ poverty_rate_percent,
+ internet_infrastructure_index,
+ average_internet_speed_mbps)
+SELECT 
+ country,
+ development_level,
+ poverty_rate_percent,
+ internet_infrastructure_index,
+ average_internet_speed_mbps
  FROM mixed GROUP BY country order by country;
+
 
 INSERT INTO students (
     country_id,
